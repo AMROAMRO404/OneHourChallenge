@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap');
-$main-color:#f336e3;
-$secondery-color: #ac51a4;
-$main-font:'Andika New Basic',
-sans-serif;
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #f336e3;
+    --secondery-color: #ac51a4;
+    --main-font: 'Andika New Basic', sans-serif;
+}
+
 .content-wrapper {
     // background-image: url("./assets/images/homepageimage.png");
-    background-image: linear-gradient(to right, $main-color, $secondery-color);
+    background-image: linear-gradient(to right, var(--main-color), var(--secondery-color));
     padding: 0px 150px;
     height: 100vh;
     .headers {
@@ -13,7 +21,7 @@ sans-serif;
             font-size: 50px;
             color: white;
             margin: 0;
-            font-family: $main-font;
+            font-family: var(--main-font);
         }
         p {
             font-size: 30px;
@@ -38,6 +46,41 @@ sans-serif;
             height: 4rem;
             font-size: 25px;
             border: 0px;
+        }
+    }
+    .change-color {
+        background-color: white;
+        width: 450px;
+        height: 50px;
+        border-radius: 20px;
+        margin: auto;
+        text-align: center;
+        .change-button {
+            outline: none;
+            cursor: pointer;
+            border: 0px;
+            padding: 0;
+            width: 3rem;
+            height: 2rem;
+            border-radius: 5px;
+        }
+        .color-text {
+            outline: none;
+            cursor: pointer;
+            margin: 10px;
+            border: 0px;
+            width: 6rem;
+            height: 2rem;
+            border-radius: 10px;
+        }
+        .color-text {
+            outline: none;
+            cursor: pointer;
+            margin: 10px;
+            border: 0px;
+            width: 6rem;
+            height: 2rem;
+            border-radius: 10px;
         }
     }
 }

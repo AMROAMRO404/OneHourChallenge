@@ -1,7 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap");
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #f336e3;
+  --secondery-color: #ac51a4;
+  --main-font: 'Andika New Basic', sans-serif;
+}
+
 .content-wrapper {
-  background-image: -webkit-gradient(linear, left top, right top, from(#f336e3), to(#ac51a4));
-  background-image: linear-gradient(to right, #f336e3, #ac51a4);
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--main-color)), to(var(--secondery-color)));
+  background-image: linear-gradient(to right, var(--main-color), var(--secondery-color));
   padding: 0px 150px;
   height: 100vh;
 }
@@ -10,7 +22,7 @@
   font-size: 50px;
   color: white;
   margin: 0;
-  font-family: "Andika New Basic", sans-serif;
+  font-family: var(--main-font);
 }
 
 .content-wrapper .headers p {
@@ -38,5 +50,44 @@
   height: 4rem;
   font-size: 25px;
   border: 0px;
+}
+
+.content-wrapper .change-color {
+  background-color: white;
+  width: 450px;
+  height: 50px;
+  border-radius: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.content-wrapper .change-color .change-button {
+  outline: none;
+  cursor: pointer;
+  border: 0px;
+  padding: 0;
+  width: 3rem;
+  height: 2rem;
+  border-radius: 5px;
+}
+
+.content-wrapper .change-color .color-text {
+  outline: none;
+  cursor: pointer;
+  margin: 10px;
+  border: 0px;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 10px;
+}
+
+.content-wrapper .change-color .color-text {
+  outline: none;
+  cursor: pointer;
+  margin: 10px;
+  border: 0px;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=index.css.map */
